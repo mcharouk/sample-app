@@ -1,0 +1,23 @@
+{
+    "executionRoleArn": "arn:aws:iam::637423642269:role/ECS-CICD-TaskExecutionRoleDemo",
+    "containerDefinitions": [
+        {
+            "name": "cicd-sample-app",
+            "image": "<IMAGE1_NAME>",
+            "essential": true,
+            "portMappings": [
+                {                    
+                    "protocol": "tcp",
+                    "containerPort": 5000
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "256",
+    "memory": "512",
+    "family": "ECS-CICD-TaskDefinition"
+}
