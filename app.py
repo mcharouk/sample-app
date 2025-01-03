@@ -15,6 +15,7 @@ def hello():
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return {
         "message": "Hello! I am currently running on a Docker Container!",
+        "version" : 1
         "time": time,
     }
 
