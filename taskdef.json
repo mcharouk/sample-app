@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "cicd-sample-app",
-            "image": "<IMAGE1_NAME>",
+            "image": "637423642269.dkr.ecr.eu-west-3.amazonaws.com/cicd-sample-app:latest",
             "essential": true,
             "portMappings": [
                 {                    
